@@ -20,13 +20,13 @@ Inputs:
 
 path = 'Features/'
 pathR = 'Results/'
-clf = 'svm'
+clf = 'lda'
 
 import Main_ICA
 import Main_PCA
 import Main_RF
 
-Main_PCA.exec_(path, pathR, 'lda')
-Main_RF.exec_(path, pathR, 'lda')
-Main_ICA.exec_(path, pathR, 'lda')
+Main_PCA.exec_(path, pathR, clf)
+Main_RF.exec_(path, pathR, clf)
+Main_ICA.exec_(path, pathR, clf)
 
